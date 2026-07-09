@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SFI — Spray Foam Insulation. Reimagined.</title>
+  <meta name="description" content="Premium spray foam insulation. Seal every gap. Save up to 50% on energy. Comfort, engineered.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">SFI<span class="logo-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#products">Products</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#compare">Compare</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+      <a href="#quote" class="nav-cta">Get a Quote</a>
+      <button class="nav-burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#products">Products</a>
+    <a href="#how">How It Works</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#compare">Compare</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#quote" class="mobile-cta">Get a Quote</a>
+  </div>
+
+  <!-- ══════════ HERO ══════════ -->
+  <header class="hero" id="top">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Spray Foam Insulation</p>
+      <h1 class="hero-title reveal">
+        Insulation.<br>
+        <span class="gradient-text">Reimagined.</span>
+      </h1>
+      <p class="hero-sub reveal">
+        One application. Every gap sealed. Up to 50% off your energy bill —
+        for the life of your home.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+        <a href="#how" class="btn btn-ghost">See how it works&nbsp;→</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    </div>
+  </header>
+
+  <!-- ══════════ MARQUEE ══════════ -->
+  <section class="marquee-band" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Air-tight&nbsp;·&nbsp;R-7 per inch&nbsp;·&nbsp;Moisture barrier&nbsp;·&nbsp;Soundproofing&nbsp;·&nbsp;Lifetime performance&nbsp;·&nbsp;Energy savings&nbsp;·&nbsp;</span>
+      <span>Air-tight&nbsp;·&nbsp;R-7 per inch&nbsp;·&nbsp;Moisture barrier&nbsp;·&nbsp;Soundproofing&nbsp;·&nbsp;Lifetime performance&nbsp;·&nbsp;Energy savings&nbsp;·&nbsp;</span>
+    </div>
+  </section>
+
+  <!-- ══════════ INTRO STATEMENT ══════════ -->
+  <section class="statement">
+    <p class="statement-text reveal-words">
+      Your home leaks the equivalent of a <em>wide-open window</em>, every single day.
+      Spray foam closes it. Permanently.
+    </p>
+  </section>
+
+  <!-- ══════════ PRODUCTS ══════════ -->
+  <section class="products" id="products">
+    <div class="section-head reveal">
+      <p class="eyebrow">Two formulas</p>
+      <h2>Pick your foam.</h2>
+    </div>
+
+    <div class="product-grid">
+      <article class="product-card card-dark reveal">
+        <div class="product-visual">
+          <div class="foam-orb orb-closed"></div>
+        </div>
+        <h3>Closed-Cell</h3>
+        <p class="product-tag">Maximum performance.</p>
+        <ul class="product-specs">
+          <li><strong>R-7</strong> per inch — the highest in class</li>
+          <li>Adds structural rigidity to walls</li>
+          <li>Built-in vapor &amp; moisture barrier</li>
+          <li>Ideal for basements, crawl spaces, exteriors</li>
+        </ul>
+        <a href="#quote" class="text-link">Quote closed-cell →</a>
+      </article>
+
+      <article class="product-card card-light reveal">
+        <div class="product-visual">
+          <div class="foam-orb orb-open"></div>
+        </div>
+        <h3>Open-Cell</h3>
+        <p class="product-tag">Quiet. Comfortable. Smart value.</p>
+        <ul class="product-specs">
+          <li><strong>R-3.8</strong> per inch, expands 100×</li>
+          <li>Exceptional sound dampening</li>
+          <li>Fills every irregular cavity</li>
+          <li>Ideal for attics, interior walls, ceilings</li>
+        </ul>
+        <a href="#quote" class="text-link">Quote open-cell →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════ SCROLLYTELLING: HOW IT WORKS ══════════ -->
+  <section class="scrolly" id="how">
+    <div class="scrolly-sticky">
+      <div class="scrolly-copy">
+        <p class="eyebrow">How it works</p>
+        <h2 class="scrolly-title" id="scrollyTitle">Spray.</h2>
+        <p class="scrolly-desc" id="scrollyDesc">
+          Applied as a fine liquid mist, it reaches places no batt or blanket ever could.
+        </p>
+        <div class="scrolly-progress">
+          <span class="dot active" data-step="0"></span>
+          <span class="dot" data-step="1"></span>
+          <span class="dot" data-step="2"></span>
+        </div>
+      </div>
+      <div class="scrolly-stage">
+        <div class="wall-cavity">
+          <div class="stud stud-left"></div>
+          <div class="stud stud-right"></div>
+          <div class="foam-fill" id="foamFill"></div>
+          <div class="spray-gun" id="sprayGun">
+            <div class="spray-cone"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ STATS ══════════ -->
+  <section class="stats" id="stats">
+    <div class="stat reveal">
+      <span class="stat-number" data-count="50" data-suffix="%">0%</span>
+      <p>average energy savings vs. traditional insulation</p>
+    </div>
+    <div class="stat reveal">
+      <span class="stat-number" data-count="100" data-suffix="×">0×</span>
+      <p>expansion on contact — foam finds every gap</p>
+    </div>
+    <div class="stat reveal">
+      <span class="stat-number" data-count="80" data-suffix="+">0+</span>
+      <p>year lifespan — it never sags, settles, or degrades</p>
+    </div>
+    <div class="stat reveal">
+      <span class="stat-number" data-count="7" data-prefix="R-">R-0</span>
+      <p>per inch of closed-cell foam — top of its class</p>
+    </div>
+  </section>
+
+  <!-- ══════════ BENEFITS BENTO ══════════ -->
+  <section class="benefits" id="benefits">
+    <div class="section-head reveal">
+      <p class="eyebrow">Why spray foam</p>
+      <h2>Sealed. Silent. <span class="gradient-text">Efficient.</span></h2>
+    </div>
+
+    <div class="bento">
+      <div class="bento-cell bento-wide reveal">
+        <div class="bento-icon">❄️</div>
+        <h3>Comfort in every season</h3>
+        <p>No more cold spots in winter or hot rooms in summer. Spray foam creates a continuous thermal envelope, so every room holds its temperature.</p>
+      </div>
+      <div class="bento-cell reveal">
+        <div class="bento-icon">🔇</div>
+        <h3>Whisper quiet</h3>
+        <p>Open-cell foam absorbs airborne sound — traffic, rain, neighbors — before it reaches you.</p>
+      </div>
+      <div class="bento-cell reveal">
+        <div class="bento-icon">💧</div>
+        <h3>Moisture &amp; mold defense</h3>
+        <p>Closed-cell foam rejects water and blocks the humid air that feeds mold.</p>
+      </div>
+      <div class="bento-cell bento-wide reveal">
+        <div class="bento-icon">🌿</div>
+        <h3>Cleaner air</h3>
+        <p>An air-sealed home keeps pollen, dust, and outdoor pollutants where they belong — outside.</p>
+      </div>
+      <div class="bento-cell bento-full reveal">
+        <div class="bento-icon">📈</div>
+        <h3>An investment that pays you back</h3>
+        <p>Most homeowners recoup the cost in energy savings within 3–5 years — then keep saving for decades. It also raises resale value from day one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ COMPARISON ══════════ -->
+  <section class="compare" id="compare">
+    <div class="section-head reveal">
+      <p class="eyebrow">The honest comparison</p>
+      <h2>There's no comparison.</h2>
+    </div>
+    <div class="compare-table-wrap reveal">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="col-featured">Spray Foam</th>
+            <th>Fiberglass</th>
+            <th>Cellulose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Air seal</td><td class="col-featured">✓ Complete</td><td>✕ None</td><td>✕ Partial</td></tr>
+          <tr><td>R-value per inch</td><td class="col-featured">Up to 7.0</td><td>2.2 – 3.8</td><td>3.2 – 3.8</td></tr>
+          <tr><td>Moisture barrier</td><td class="col-featured">✓ Built-in</td><td>✕ Absorbs water</td><td>✕ Absorbs water</td></tr>
+          <tr><td>Sags or settles</td><td class="col-featured">Never</td><td>Over time</td><td>Up to 20%</td></tr>
+          <tr><td>Lifespan</td><td class="col-featured">80+ years</td><td>10 – 25 years</td><td>20 – 30 years</td></tr>
+          <tr><td>Adds structural strength</td><td class="col-featured">✓ Yes</td><td>✕ No</td><td>✕ No</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════ TESTIMONIALS ══════════ -->
+  <section class="reviews" id="reviews">
+    <div class="section-head reveal">
+      <p class="eyebrow">From our customers</p>
+      <h2>People notice the difference.</h2>
+    </div>
+    <div class="review-grid">
+      <figure class="review-card reveal">
+        <blockquote>“Our upstairs used to be 10 degrees hotter than the rest of the house. After SFI sprayed the attic, it's the most comfortable room we have. The energy bill dropped $140 the first month.”</blockquote>
+        <figcaption><strong>Sarah M.</strong><span>Attic insulation</span></figcaption>
+        <div class="stars">★★★★★</div>
+      </figure>
+      <figure class="review-card reveal">
+        <blockquote>“Professional crew, spotless job site, done in a day. Two winters later the basement is dry and warm for the first time since we bought the house.”</blockquote>
+        <figcaption><strong>David &amp; Karen T.</strong><span>Basement closed-cell</span></figcaption>
+        <div class="stars">★★★★★</div>
+      </figure>
+      <figure class="review-card reveal">
+        <blockquote>“We built new and insisted on spray foam throughout. Our 2,800 sq ft home heats and cools for less than our old 1,600 sq ft one did. Best decision of the build.”</blockquote>
+        <figcaption><strong>Miguel R.</strong><span>New construction, whole home</span></figcaption>
+        <div class="stars">★★★★★</div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ══════════ CTA / QUOTE ══════════ -->
+  <section class="quote" id="quote">
+    <div class="quote-inner">
+      <div class="quote-copy reveal">
+        <h2>Ready to seal<br>the deal?</h2>
+        <p>Free on-site assessment. Transparent pricing. Most homes finished in a single day.</p>
+        <ul class="quote-perks">
+          <li>✓ Free inspection &amp; thermal assessment</li>
+          <li>✓ Licensed &amp; fully insured crews</li>
+          <li>✓ Lifetime workmanship warranty</li>
+        </ul>
+      </div>
+      <form class="quote-form reveal" id="quoteForm">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Full name" required>
+          <input type="tel" name="phone" placeholder="Phone" required>
+        </div>
+        <input type="email" name="email" placeholder="Email address" required>
+        <select name="project" required>
+          <option value="" disabled selected>Project type</option>
+          <option>Attic</option>
+          <option>Basement / crawl space</option>
+          <option>Walls / whole home</option>
+          <option>New construction</option>
+          <option>Commercial / metal building</option>
+        </select>
+        <textarea name="details" rows="3" placeholder="Tell us about your project (optional)"></textarea>
+        <button type="submit" class="btn btn-primary btn-block">Request My Free Quote</button>
+        <p class="form-note">We reply within one business day. No spam, ever.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="nav-logo">SFI<span class="logo-dot">.</span></a>
+        <p>Premium spray foam insulation for homes and businesses.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="#products">Products</a>
+        <a href="#how">How It Works</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#compare">Compare</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+15550100">(555) 555-0100</a>
+        <a href="mailto:hello@sfi-insulation.com">hello@sfi-insulation.com</a>
+        <span>Mon–Sat, 7am–6pm</span>
+      </div>
+    </div>
+    <p class="footer-legal">© 2026 SFI Spray Foam Insulation. Licensed &amp; insured.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
